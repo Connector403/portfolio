@@ -657,9 +657,11 @@ section {
 /*--------------------------------------------------------------
 # Portfolio
 --------------------------------------------------------------*/
-@media screen and (max-width: 990px){
+/* @media screen and (max-width: 990px){
   .portfolio .portfolio-item {
     grid-template-columns: 1fr;
+    margin-left: auto;
+    width: 100%;
     
 
   }
@@ -667,14 +669,16 @@ section {
 @media screen and (max-width: 650px){
   .special {
     grid-template-columns: 1fr;
+    margin-left: auto;
+    width: 100%;
  
 
   }
 }
-@media screen and (min-width: 990px){
+@media screen and (min-width: 900px){
   .portfolio .portfolio-item {
- 
-    margin-left: 50px;
+    
+    display: inline-flexbox;
 
   }
 }
@@ -687,15 +691,15 @@ section {
   margin-bottom: 100px;
 
   
-}
+} */
 
-.portfolio-item {
+/* .portfolio-item {
   border:2px solid #fff;
   box-shadow: 10px 10px 5px #ccc;
   -moz-box-shadow: 10px 10px 5px #ccc;
   -webkit-box-shadow: 10px 10px 5px #ccc;
   -khtml-box-shadow: 10px 10px 5px #ccc;
-}
+} */
 
 
 .portfolio #portfolio-flters {
