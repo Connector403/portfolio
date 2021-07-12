@@ -340,23 +340,31 @@
 
           <div class="col-lg-4 col-md-6 portfolio-item front-end filter-web">
             <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
+              <figure class="figure">
+                <img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid mw-100 mh-100" alt="">
+                <figcaption class="figure-caption text-center"> Gazetter</figcaption>
+              </figure>
               <div class="portfolio-links">
                 <a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery"
                   class="portfolio-lightbox" title="Gazetter"><i class="bx bx-plus"></i></a>
                 <a href="Gazetter-details.html" title="More Details"><i class="bx bx-link"></i></a>
               </div>
+        
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6 portfolio-item back-end front-end filter-web">
             <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
+              <figure class="figure">
+                <img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid mx-100 mh-100" alt="">
+                <figcaption class="figure-caption text-center"> Company Directory</figcaption>
+              </figure>
               <div class="portfolio-links">
                 <a href="assets/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery"
                   class="portfolio-lightbox" title="Company Directory"><i class="bx bx-plus"></i></a>
                 <a href="compdir-details.html" title="More Details"><i class="bx bx-link"></i></a>
               </div>
+           
             </div>
           </div>
 
@@ -369,6 +377,7 @@
 
 
         </div>
+  
 
       </div>
     </section><!-- End Portfolio Section -->
@@ -380,14 +389,45 @@
 
     <!-- ======= Contact Section ======= -->
     <section id="contact" class="contact">
-      <div class="container">
+      <div class="container col-offset-6 centered">
 
         <div class="section-title">
           <h2>Contact Me</h2>
       
         </div>
+        
+        <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
+          <form action="forms/contact-form.php" method="post" role="form" class="php-email-form">
+            <div class="row">
+              <div class="form-group col-md-6">
+                <label for="name">Your Name</label>
+                <input type="text" name="name" class="form-control" id="name" required placeholder="Full Name">
+              </div>
+              <div class="form-group col-md-6">
+                <label for="name">Your Email</label>
+                <input type="email" class="form-control" name="mail" id="email" required placeholder="Your e-mail">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="name">Subject</label>
+              <input type="text" class="form-control" name="subject" id="subject" required placeholder="Subject">
+            </div>
+            <div class="form-group">
+              <label for="name">Message</label>
+              <textarea class="form-control" name="message" rows="10" required placeholder="Message"></textarea>
+            </div>
+            <div class="my-3">
+              <div class="loading">Loading</div>
+              <div class="error-message"></div>
+              <div class="sent-message">Your message has been sent. Thank you!</div>
+            </div>
+            <div class="text-center">
+              <button type="submit" name="submit">Send Message</button>
+            </div>
+          </form>
+        </div>
 
-        <div class="row" data-aos="fade-in">
+        <!-- <div class="row" data-aos="fade-in"> -->
 
           <!-- <div class="col-lg-5 d-flex align-items-stretch">
             <div class="info">
@@ -416,36 +456,8 @@
 
           </div> -->
 
-          <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-              <div class="row">
-                <div class="form-group col-md-6">
-                  <label for="name">Your Name</label>
-                  <input type="text" name="name" class="form-control" id="name" required>
-                </div>
-                <div class="form-group col-md-6">
-                  <label for="name">Your Email</label>
-                  <input type="email" class="form-control" name="email" id="email" required>
-                </div>
-              </div>
-              <div class="form-group">
-                <label for="name">Subject</label>
-                <input type="text" class="form-control" name="subject" id="subject" required>
-              </div>
-              <div class="form-group">
-                <label for="name">Message</label>
-                <textarea class="form-control" name="message" rows="10" required></textarea>
-              </div>
-              <div class="my-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
-              </div>
-              <div class="text-center"><button type="submit">Send Message</button></div>
-            </form>
-          </div>
 
-        </div>
+        <!-- </div> -->
 
       </div>
     </section><!-- End Contact Section -->
