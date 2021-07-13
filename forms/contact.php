@@ -14,11 +14,12 @@
 
     if(  mail($mailTo , $subject, $txt, $headers)){
     
-      header("Location: ../../index.html?mailsend");
-      echo  $success;
+      header("Location: ../../index.html?mailsendSuccess");
+      echo  '<script> alert("Thank you, Your message was send successfully!")</script>';
       
     } else {
-      echo $failure ;
+      header("Location: ../../index.html?mailsendFailure");
+      echo'<script> alert("Sorry, Failure to send message!")</script>';
     }
   
     // $_SESSION['sent-message']='Thank you, Youre message have been Sent!';

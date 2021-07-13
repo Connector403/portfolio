@@ -256,13 +256,13 @@
 })()
 
 
-$('#contact').submit(function(e) {
-  $.ajax({
-    url: '../../../forms/contact.php',
-    method: 'GET',
-    data: 'json',
-    success: function{
-      $('#success-message').val(data);
-    }
-  })
-})
+// $('#contact').submit(function(e) {
+//   $.ajax({
+//     url: '../../../forms/contact.php',
+//     method: 'GET',
+//     data: 'json',
+//     success: function{
+//       $('#success-message').val(data);
+//     }
+//   })
+// })
