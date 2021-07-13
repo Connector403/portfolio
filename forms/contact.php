@@ -1,7 +1,8 @@
 <?php 
 
   if(isset($_POST['submit'])) {
-
+    $success = $_SESSION['sent-message']='Thank you, Your message have been Sent!';
+    $failure =  $_SESSION['error-message']='Sorry, Failure to send your message!';
     $name = $_POST['name'];
     $subject = $_POST['subject'];
     $mailFrom = $_POST['mail'];
@@ -14,10 +15,10 @@
     if(  mail($mailTo , $subject, $txt, $headers)){
     
       header("Location: ../../index.html?mailsend");
-      echo $_SESSION['sent-message']='Thank you, Your message have been Sent!';
+      echo  $success;
       
     } else {
-      echo $_SESSION['error-message']='Sorry, Failure to send your message!';
+      echo $failure ;
     }
   
     // $_SESSION['sent-message']='Thank you, Youre message have been Sent!';
