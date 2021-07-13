@@ -12,10 +12,10 @@
 
     if(  mail($mailTo , $subject, $txt, $headers)){
       echo '<div class="sent-message"> Your message has been sent. Thank you!</div>';
+      header("Location: ../../index.html?mailsend");
     } else {
       echo '  <div class="error-message">Failure to send message</div> ';
     }
   
-    // header("Location: ../../index.html?mailsend");
     // $_SESSION['sent-message']='Thank you, Youre message have been Sent!';
   }
