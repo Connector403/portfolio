@@ -8,7 +8,7 @@
 
     $mailTo = "hafiz_2010@outlook.com";
     $headers = "From: ". $mailFrom;
-    $txt = "Youyy have received an e-mail from ". $name. ".\n\n".$message;
+    $txt = "You have received an e-mail from ". $name. ".\n\n".$message;
 
     mail($mailTo , $subject, $txt, $headers);
     header("Location: ../../index.html?mailsend");
