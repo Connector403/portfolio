@@ -21,8 +21,10 @@ if (isset($_POST['submit'])) {
             window.location.href='../../index.html';
             </script>";
   } else {
-    header("Location: ../../index.html?mailsendFailure");
-    echo '<script> alert("Sorry, Failure to send message!")</script>';
+    echo "<script>
+            alert('Failure to send Message Sorry');
+            window.location.href='../../index.html';
+            </script>";
   }
 
   // $_SESSION['sent-message']='Thank you, Youre message have been Sent!';
