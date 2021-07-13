@@ -1,6 +1,7 @@
 <?php 
 
   if(isset($_POST['submit'])) {
+
     $name = $_POST['name'];
     $subject = $_POST['subject'];
     $mailFrom = $_POST['mail'];
@@ -12,10 +13,11 @@
 
     if(  mail($mailTo , $subject, $txt, $headers)){
     
-      // header("Location: ../../index.html?mailsend");
-      $_SESSION['sent-message']='Thank you, Your message have been Sent!';
+      header("Location: ../../index.html?mailsend");
+      echo $_SESSION['sent-message']='Thank you, Your message have been Sent!';
+      
     } else {
-      $_SESSION['error-message']='Sorry, Failure to send your message!';
+      echo $_SESSION['error-message']='Sorry, Failure to send your message!';
     }
   
     // $_SESSION['sent-message']='Thank you, Youre message have been Sent!';
