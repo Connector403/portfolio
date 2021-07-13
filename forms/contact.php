@@ -13,9 +13,9 @@
     $txt = "You have received an e-mail from ". $name. ".\n\n".$message;
 
     if(  mail($mailTo , $subject, $txt, $headers)){
-    
-      echo  '<script> alert("Thank you, Your message was send successfully!")</script>';
       header("Location: ../../index.html?mailsend");
+      
+        echo  '<script> alert("Thank you, Your message was send successfully!")</script>';
       
     } else {
       header("Location: ../../index.html?mailsendFailure");
