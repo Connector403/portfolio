@@ -11,10 +11,11 @@
     $txt = "You have received an e-mail from ". $name. ".\n\n".$message;
 
     if(  mail($mailTo , $subject, $txt, $headers)){
-      echo '<div class="sent-message"> Your message has been sent. Thank you!</div>';
+    
       header("Location: ../../index.html?mailsend");
+      $_SESSION['sent-message']='Thank you, Your message have been Sent!';
     } else {
-      echo '  <div class="error-message">Failure to send message</div> ';
+      $_SESSION['error-message']='Sorry, Failure to send your message!';
     }
   
     // $_SESSION['sent-message']='Thank you, Youre message have been Sent!';
