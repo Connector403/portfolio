@@ -12,4 +12,5 @@
 
     mail($mailTo , $subject, $txt, $headers);
     header("Location: ../../index.html?mailsend");
+    $_SESSION['sent-message']='Thank you, Youre message have been Sent!';
   }
