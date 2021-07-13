@@ -14,8 +14,8 @@
 
     if(  mail($mailTo , $subject, $txt, $headers)){
     
-      header("Location: ../../index.html?mailsendSuccess");
       echo  '<script> alert("Thank you, Your message was send successfully!")</script>';
+      header("Location: ../../index.html?mailsendSuccess");
       
     } else {
       header("Location: ../../index.html?mailsendFailure");
