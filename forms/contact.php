@@ -17,7 +17,7 @@ if (isset($_POST['submit'])) {
 
     //   echo  '<script> alert("Thank you, Your message was send successfully!")</script>';
     echo "<script>
-            document.getElementById('succ').html('Message Sent Successfully!');
+            alert('Message  sent successfully');
             window.location.href='../../index.html';
             </script>";
   } else {
